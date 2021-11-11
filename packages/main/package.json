@@ -1,0 +1,9 @@
+{
+  "name": "@lerna-github-actions/main",
+  "author": "Thiago Resende",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "webpack serve --config webpack.dev.config.ts",
+    "build": "webpack --config webpack.prod.config.ts"
+  }
+}
