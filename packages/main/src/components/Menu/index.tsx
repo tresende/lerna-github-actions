@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import * as S from './styles'
 
 const Nav = () => (
   <S.Wrapper>
-    <a href="/html/">Novo Produtos</a>
-    <a href="/css/">Listar Produtos</a>
+    <Link to="/">Invoices</Link>
+    <Link to="/Create">Invoices</Link>
   </S.Wrapper>
 )
 

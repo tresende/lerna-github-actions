@@ -5,5 +5,10 @@
   "scripts": {
     "start": "webpack serve --config webpack.dev.config.ts",
     "build": "webpack --config webpack.prod.config.ts"
+  },
+  "dependencies": {
+    "@lerna-github-actions/list": "*",
+    "@lerna-github-actions/create": "*",
+    "react-router-dom": "^6.0.2"
   }
 }
