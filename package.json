@@ -2,8 +2,9 @@
   "name": "@lerna-github-actions/root",
   "private": true,
   "scripts": {
-    "start": "lerna exec --scope @lerna-github-actions/main -- npm start",
-    "build": "lerna exec --scope @lerna-github-actions/main -- npm run build",
+    "start": "lerna run start --stream --scope @lerna-github-actions/main",
+    "build": "lerna run build --stream --scope @lerna-github-actions/main",
+    "test": "lerna run test",
     "bootstrap": "lerna bootstrap --use-workspaces"
   },
   "workspaces": [
@@ -14,21 +15,34 @@
     "react-dom": "^17.0.1",
     "styled-components": "^5.3.3"
   },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
   "devDependencies": {
-    "@babel/core": "^7.12.10",
+    "@babel/core": "^7.13.16",
+    "@babel/preset-typescript": "^7.13.0",
+    "@babel/runtime": "^7.13.17",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-styled-components": "^1.12.0",
+    "@babel/plugin-syntax-jsx": "^7.16.0",
     "@babel/plugin-transform-runtime": "^7.12.10",
-    "@babel/preset-env": "^7.12.11",
-    "@babel/preset-react": "^7.12.10",
-    "@babel/preset-typescript": "^7.12.7",
-    "@babel/runtime": "^7.12.5",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.6",
+    "@testing-library/react-hooks": "^5.1.2",
+    "@testing-library/user-event": "^13.1.6",
     "@types/fork-ts-checker-webpack-plugin": "^0.4.5",
+    "@types/jest": "^26.0.23",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/styled-components": "^5.1.15",
     "@types/webpack-dev-server": "^4.0.3",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
     "@typescript-eslint/parser": "^4.33.0",
-    "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^3.0.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
@@ -38,12 +52,14 @@
     "eslint-webpack-plugin": "^3.1.1",
     "fork-ts-checker-webpack-plugin": "^6.0.8",
     "html-webpack-plugin": "^5.3.2",
+    "jest": "^26.6.3",
+    "jest-styled-components": "^7.0.4",
+    "lerna": "^4.0.0",
     "prettier": "^2.4.1",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.3",
     "webpack": "^5.51.1",
     "webpack-cli": "^4.8.0",
-    "webpack-dev-server": "^4.0.0",
-    "lerna": "^4.0.0"
+    "webpack-dev-server": "^4.0.0"
   }
 }
