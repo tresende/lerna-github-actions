@@ -10,18 +10,15 @@ type AppProps = {
 }
 
 const App = ({ routes }: AppProps) => (
-  <>
+  <BrowserRouter>
     <GlobalStyle />
-    <BrowserRouter>
-      <Menu />
-      <Routes>
-        {routes.map((item, index) => (
-          <Route key={index} path={item.path} element={item.component} />
-        ))}
-      </Routes>
-    </BrowserRouter>
-    ,
-  </>
+    <Menu />
+    <Routes>
+      {routes.map((item, index) => (
+        <Route key={index} path={item.path} element={item.component} />
+      ))}
+    </Routes>
+  </BrowserRouter>
 )
 
 export default App

@@ -5,8 +5,8 @@ import * as S from './styles'
 
 const Nav = () => (
   <S.Wrapper>
-    <Link to="/">Invoices</Link>
-    <Link to="/Create">Invoices</Link>
+    <Link to="/">List</Link>
+    <Link to="/Create">Create</Link>
   </S.Wrapper>
 )
 
