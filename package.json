@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "start": "lerna exec --scope @lerna-github-actions/main -- npm start",
+    "build": "lerna exec --scope @lerna-github-actions/main -- npm run build",
     "bootstrap": "lerna bootstrap --use-workspaces"
   },
   "workspaces": [
