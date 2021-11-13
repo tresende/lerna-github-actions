@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Menu /> should ... 1`] = `
+exports[`<Create /> should render correctly 1`] = `
 <main
   class="sc-jRQBWg dEozX"
 >
