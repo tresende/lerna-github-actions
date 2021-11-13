@@ -3,6 +3,7 @@
   "author": "Thiago Resende",
   "version": "0.0.1",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "yarn test --watch"
   }
 }
