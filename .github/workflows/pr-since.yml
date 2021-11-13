@@ -1,14 +1,15 @@
-name: pr
+name: pr-since
 
 on:
   pull_request:
     branches:
       - main
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - run: yarn
-      - run: yarn build
-      - run: yarn test
+      - run: yarn test:since

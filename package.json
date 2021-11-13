@@ -4,7 +4,8 @@
   "scripts": {
     "start": "lerna run start --stream --scope @lerna-github-actions/main",
     "build": "lerna run build --stream --scope @lerna-github-actions/main",
-    "test": "lerna run test",
+    "test:full": "lerna run test",
+    "test:since": "lerna run test --since origin/main",
     "bootstrap": "lerna bootstrap --use-workspaces"
   },
   "workspaces": [
