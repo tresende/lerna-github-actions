@@ -12,4 +12,4 @@ jobs:
         with:
           fetch-depth: 0
       - run: yarn
-      - run: yarn test:since
+      - run: yarn test:full
