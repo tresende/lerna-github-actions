@@ -25,16 +25,16 @@ const Form = ({ onSubmit }: FormProps) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <TextInput value={product?.name} label="Name" onChange={(value: string) => handleChange('name', value)} />
+      <TextInput value={product?.name} text="Name" onChange={(value: string) => handleChange('name', value)} />
       <TextInput
         value={product?.description}
-        label="Description"
+        text="Description"
         onChange={(value: string) => handleChange('description', value)}
       />
       <TextInput
         value={product?.date}
         type="date"
-        label="Date"
+        text="Date"
         onChange={(value: string) => handleChange('date', value)}
       />
       <S.ButtonWrapper>

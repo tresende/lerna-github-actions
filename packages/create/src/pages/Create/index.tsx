@@ -5,13 +5,11 @@ import Form from '../../components/Form'
 
 import * as S from './styles'
 
-const Create = () => {
-  return (
-    <S.Wrapper>
-      <h1>Create</h1>
-      <Form onSubmit={ProductService.save} />
-    </S.Wrapper>
-  )
-}
+const Create = () => (
+  <S.Wrapper>
+    <h1>Create</h1>
+    <Form onSubmit={ProductService.save} />
+  </S.Wrapper>
+)
 
 export default Create

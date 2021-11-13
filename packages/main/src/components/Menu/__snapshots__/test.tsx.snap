@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Menu /> should ... 1`] = `
+<nav
+  class="sc-bdvvtL dcoOOv"
+>
+  <a
+    href="/"
+  >
+    List
+  </a>
+  <a
+    href="/Create"
+  >
+    Form
+  </a>
+</nav>
+`;

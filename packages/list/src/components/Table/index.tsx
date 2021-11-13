@@ -14,22 +14,26 @@ const Table = () => {
 
   return (
     <S.Wrapper>
-      <S.TR>
-        <S.TH>Name</S.TH>
-        <S.TH>Description</S.TH>
-        <S.TH>Date</S.TH>
-        <S.TH>Actions</S.TH>
-      </S.TR>
-      {items.map((item, index) => (
-        <S.TR key={index}>
-          <S.TD>{item.name}</S.TD>
-          <S.TD>{item.description}</S.TD>
-          <S.TD>{item.date}</S.TD>
-          <S.TD>
-            <S.Button onClick={() => handleDelete(index)}>Remove</S.Button>
-          </S.TD>
+      <thead>
+        <S.TR>
+          <S.TH>Name</S.TH>
+          <S.TH>Description</S.TH>
+          <S.TH>Date</S.TH>
+          <S.TH>Actions</S.TH>
         </S.TR>
-      ))}
+      </thead>
+      <tbody>
+        {items.map((item, index) => (
+          <S.TR key={index}>
+            <S.TD>{item.name}</S.TD>
+            <S.TD>{item.description} -</S.TD>
+            <S.TD>{item.date}</S.TD>
+            <S.TD>
+              <S.Button onClick={() => handleDelete(index)}>Remove</S.Button>
+            </S.TD>
+          </S.TR>
+        ))}
+      </tbody>
     </S.Wrapper>
   )
 }
