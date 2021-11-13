@@ -1,10 +1,12 @@
 import React from 'react'
 
+import Table from '../../components/Table'
+
 import * as S from './styles'
 
 const List = () => (
   <S.Wrapper>
-    <h1>List</h1>
+    <Table />
   </S.Wrapper>
 )
 
