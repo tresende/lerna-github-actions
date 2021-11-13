@@ -1,11 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<List /> should ... 1`] = `
-<div
-  class="sc-bdvvtL"
+<main
+  class="sc-jRQBWg hwUROK"
 >
-  <h1>
-    List
-  </h1>
-</div>
+  <table
+    class="sc-hKwDye Lbstb"
+  >
+    <thead>
+      <tr
+        class="sc-gsDKAQ"
+      >
+        <th
+          class="sc-bdvvtL"
+        >
+          Name
+        </th>
+        <th
+          class="sc-bdvvtL"
+        >
+          Description
+        </th>
+        <th
+          class="sc-bdvvtL"
+        >
+          Date
+        </th>
+        <th
+          class="sc-bdvvtL"
+        >
+          Actions
+        </th>
+      </tr>
+    </thead>
+    <tbody />
+  </table>
+</main>
 `;

@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Menu /> should ... 1`] = `
+<main
+  class="sc-jRQBWg dEozX"
+>
+  <h1>
+    Create
+  </h1>
+  <form>
+    <div
+      class="sc-bdvvtL iXMHdx"
+    >
+      <label
+        class="sc-gsDKAQ iYacNX"
+        for="Name"
+      >
+        Name
+      </label>
+      <input
+        class="sc-dkPtRN iQffaK"
+        name="Name"
+        placeholder="Name"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="sc-bdvvtL iXMHdx"
+    >
+      <label
+        class="sc-gsDKAQ iYacNX"
+        for="Description"
+      >
+        Description
+      </label>
+      <input
+        class="sc-dkPtRN iQffaK"
+        name="Description"
+        placeholder="Description"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="sc-bdvvtL iXMHdx"
+    >
+      <label
+        class="sc-gsDKAQ iYacNX"
+        for="Date"
+      >
+        Date
+      </label>
+      <input
+        class="sc-dkPtRN iQffaK"
+        name="Date"
+        placeholder="Date"
+        type="date"
+        value=""
+      />
+    </div>
+    <div
+      class="sc-hKwDye cXwhOz"
+    >
+      <button
+        class="sc-eCImPb cGGpCY"
+        color="lightgray"
+        type="button"
+      >
+        Clear
+      </button>
+      <button
+        class="sc-eCImPb hKvVsk"
+        color="#ea1d2c"
+        type="submit"
+      >
+        Save
+      </button>
+    </div>
+  </form>
+</main>
+`;

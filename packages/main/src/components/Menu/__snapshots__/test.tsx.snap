@@ -2,7 +2,7 @@
 
 exports[`<Menu /> should ... 1`] = `
 <nav
-  class="sc-bdvvtL joudpd"
+  class="sc-bdvvtL dcoOOv"
 >
   <a
     href="/"
@@ -12,7 +12,7 @@ exports[`<Menu /> should ... 1`] = `
   <a
     href="/Create"
   >
-    Create
+    Form
   </a>
 </nav>
 `;
