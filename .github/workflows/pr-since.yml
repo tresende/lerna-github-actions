@@ -5,9 +5,13 @@ on:
     branches:
       - main
 jobs:
-  test:
+  checkout:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - run: yarn
+  test:
+    runs-on: ubuntu-latest
+    steps:
       - run: yarn
       - run: yarn test:since
