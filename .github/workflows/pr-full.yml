@@ -1,4 +1,4 @@
-name: pr-since
+name: pr-full
 
 on:
   pull_request:
