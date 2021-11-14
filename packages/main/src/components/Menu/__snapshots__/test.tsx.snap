@@ -16,3 +16,20 @@ exports[`<Menu /> should ... 1`] = `
   </a>
 </nav>
 `;
+
+exports[`<Menu /> should render menu correctly 1`] = `
+<nav
+  class="sc-bdvvtL dcoOOv"
+>
+  <a
+    href="/"
+  >
+    List
+  </a>
+  <a
+    href="/Create"
+  >
+    Form
+  </a>
+</nav>
+`;

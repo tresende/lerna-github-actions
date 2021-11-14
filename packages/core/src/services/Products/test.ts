@@ -1,10 +1,5 @@
 import ProductService from '.'
-import { Product } from '../../types/Product'
-
-const product: Product = {
-  name: 'a',
-  description: 'b'
-}
+import { product } from './mock'
 
 describe('ProductService', () => {
   beforeEach(() => {
