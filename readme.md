@@ -1,6 +1,5 @@
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 ![](https://img.shields.io/badge/unit--test-jest-brightgreen)
-
 ![](https://img.shields.io/badge/package%20manager-yarn-blue)
 
 # lerna-github-actions
