@@ -9,7 +9,7 @@ import { FormProps } from '../../components/Form'
 jest.mock('@lerna-github-actions/core/src/services/Products')
 
 jest.mock('../../components/Form', () => ({ onSubmit }: FormProps) => (
-  <button onClick={() => onSubmit({})} data-testid="form" />
+  <button type="button" onClick={() => onSubmit({})} data-testid="form" />
 ))
 
 describe('<Create />', () => {
