@@ -1,6 +1,7 @@
 {
   "name": "@lerna-github-actions/root",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "start": "lerna run start --stream --scope @lerna-github-actions/main",
     "build": "lerna run build --stream --scope @lerna-github-actions/main",
