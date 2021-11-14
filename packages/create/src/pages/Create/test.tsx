@@ -4,26 +4,22 @@ import { render, screen } from '@testing-library/react'
 import UserService from '@lerna-github-actions/core/src/services/Products'
 
 import Create from '.'
+import { FormProps } from '../../components/Form'
 
 jest.mock('@lerna-github-actions/core/src/services/Products')
+
+jest.mock('../../components/Form', () => ({ onSubmit }: FormProps) => (
+  <button onClick={() => onSubmit({})} data-testid="form" />
+))
 
 describe('<Create />', () => {
   afterAll(() => {
     jest.resetAllMocks()
   })
 
-  it('should render correctly', () => {
-    const { container } = render(<Create />)
-
-    screen.getByRole('heading', { name: /create/i })
-    expect(container.firstChild).toMatchSnapshot()
-  })
-
   it('Should call user service on subimit', () => {
     render(<Create />)
-    const name = 'IPHONE 13'
-    userEvent.type(screen.getByPlaceholderText(/Name/i), name)
-    userEvent.click(screen.getByRole('button', { name: /save/i }))
+    userEvent.click(screen.getByTestId('form'))
 
     expect(UserService.save).toBeCalledTimes(1)
   })
