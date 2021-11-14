@@ -3,7 +3,7 @@ name: pr-since
 on:
   pull_request:
     branches:
-      - main
+      - feature/mocked-react-components
 jobs:
   test:
     runs-on: ubuntu-latest
