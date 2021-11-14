@@ -4,9 +4,9 @@ exports[`<Create /> should render correctly 1`] = `
 <main
   class="sc-jRQBWg dEozX"
 >
-  <h1>
+  <h2>
     Create
-  </h1>
+  </h2>
   <form>
     <div
       class="sc-bdvvtL iXMHdx"

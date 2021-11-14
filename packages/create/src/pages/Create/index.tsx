@@ -7,7 +7,7 @@ import * as S from './styles'
 
 const Create = () => (
   <S.Wrapper>
-    <h1>Create</h1>
+    <h2>Create</h2>
     <Form onSubmit={ProductService.save} />
   </S.Wrapper>
 )
