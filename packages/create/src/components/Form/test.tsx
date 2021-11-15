@@ -10,27 +10,19 @@ const props = {
 }
 
 describe('<Form />', () => {
-  beforeAll(() => {
-    render(<Form {...props} />)
-  })
-  it('Should render form correctly', () => {
-    expect(screen.getByPlaceholderText(/Name/i)).toBeInTheDocument()
-    expect(screen.getByPlaceholderText(/Description/i)).toBeInTheDocument()
-    expect(screen.getByPlaceholderText(/Date/i)).toBeInTheDocument()
-  })
-
   it('Should render form onSubmit', () => {
+    render(<Form {...props} />)
     const name = 'IPHONE 13'
+    const inputName = screen.getByPlaceholderText(/Name/i)
     userEvent.type(screen.getByPlaceholderText(/Name/i), name)
     userEvent.click(screen.getByRole('button', { name: /save/i }))
 
+    expect(screen.getByPlaceholderText(/Name/i)).toBeInTheDocument()
+    expect(screen.getByPlaceholderText(/Description/i)).toBeInTheDocument()
+    expect(screen.getByPlaceholderText(/Date/i)).toBeInTheDocument()
     expect(props.onSubmit).toBeCalledTimes(1)
     expect(props.onSubmit).toBeCalledWith({ name })
-  })
 
-  it('Should clear input values', () => {
-    const inputName = screen.getByPlaceholderText(/Name/i)
-    userEvent.type(inputName, 'IPHONE 13')
     userEvent.click(screen.getByRole('button', { name: /clear/i }))
 
     expect(inputName).toHaveValue('')
