@@ -1,6 +1,6 @@
 import React from 'react'
 import userEvent from '@testing-library/user-event'
-import { render, screen } from '@testing-library/react'
+import { render, screen } from '@testing-library/react/pure'
 import UserService from '@lerna-github-actions/core/src/services/Products'
 
 import Create from '.'
@@ -20,7 +20,6 @@ describe('<Create />', () => {
   })
 
   it('Should call user service on subimit', () => {
-    render(<Create />)
     const name = 'IPHONE 13'
     userEvent.type(screen.getByPlaceholderText(/Name/i), name)
     userEvent.click(screen.getByRole('button', { name: /save/i }))
